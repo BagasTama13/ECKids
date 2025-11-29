@@ -145,7 +145,8 @@
                 const items = track.querySelectorAll('.carousel-stack-item');
                 const totalItems = items.length;
                 let currentIndex = 0;
-                const slideInterval = 5000; 
+                // Kecepatan Auto-Slide: 2000ms
+                const slideInterval = 2000; 
                 let autoSlide = setInterval(nextSlide, slideInterval);
 
                 // Mengupdate kelas CSS untuk menampilkan slide saat ini dan slide tetangga
@@ -172,12 +173,10 @@
 
                 function nextSlide() { 
                     goToSlide(currentIndex + 1); 
-                    resetAutoSlide();
                 }
 
                 function prevSlide() { 
                     goToSlide(currentIndex - 1); 
-                    resetAutoSlide();
                 }
                 
                 // Mereset interval auto slide
@@ -188,8 +187,14 @@
 
                 // Event Listeners untuk tombol navigasi
                 if(prevButton && nextButton) {
-                    prevButton.addEventListener('click', prevSlide);
-                    nextButton.addEventListener('click', nextSlide);
+                    prevButton.addEventListener('click', () => {
+                        prevSlide();
+                        resetAutoSlide(); // Reset saat diklik
+                    });
+                    nextButton.addEventListener('click', () => {
+                        nextSlide();
+                        resetAutoSlide(); // Reset saat diklik
+                    });
                 }
                 
                 // Touch/Swipe Logic untuk Mobile
@@ -197,13 +202,12 @@
                 let touchEndX = 0;
                 const minSwipeDistance = 50; 
                 
+                // Mendapatkan elemen kontainer yang fokusable untuk event keyboard
+                const container = document.querySelector('.carousel-3d-stack-container');
+                
                 track.addEventListener('touchstart', (e) => {
                     touchStartX = e.touches[0].clientX;
-                });
-                
-                track.addEventListener('touchmove', (e) => {
-                    // Mencegah scroll halaman saat melakukan swipe pada carousel
-                    e.preventDefault(); 
+                    clearInterval(autoSlide); // Hentikan auto-slide saat mulai menyentuh
                 });
                 
                 track.addEventListener('touchend', (e) => {
@@ -221,16 +225,32 @@
                                 nextSlide();
                             }
                         }
+                        resetAutoSlide(); // Lanjutkan auto-slide setelah interaksi selesai
                     }
                 });
                 // END: Touch/Swipe Logic
 
+                // Keyboard Navigation (Opsional, ditambahkan karena ada tabindex=0 di HTML)
+                if (container) {
+                    container.addEventListener('keydown', (e) => {
+                        if (e.key === 'ArrowLeft') {
+                            prevSlide();
+                            resetAutoSlide();
+                        } else if (e.key === 'ArrowRight') {
+                            nextSlide();
+                            resetAutoSlide();
+                        }
+                    });
+                }
+                
                 // Inisialisasi tampilan awal carousel
                 updateCarousel();
             }
             // --- END: CAROUSEL 3D STACK LOGIC ---
             
             // --- START: SCROLLSPY/ACTIVE NAV LINK LOGIC ---
+            // Logika ini melacak posisi scroll untuk menyorot link navigasi yang aktif.
+            // Jika "section-benefits" adalah bagian dari halaman Anda, logika ini sudah mencakupnya.
             const sections = document.querySelectorAll('section[id]');
             // Menggabungkan navLinks dan mobileNavLinks
             const allNavLinks = [...document.querySelectorAll('.main-nav a'), ...document.querySelectorAll('.mobile-nav a')]; 

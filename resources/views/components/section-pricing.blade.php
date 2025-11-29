@@ -2,7 +2,7 @@
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <span class="text-brand-orange font-bold uppercase tracking-wider">Investasi Terbaik</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-brand-brown mt-2">Pricing Packages</h2>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-brand-brown mt-2">Paket Harga</h2>
         </div>
 
         <div id="pricing-track" class="
@@ -10,53 +10,45 @@
             md:grid md:grid-cols-3 md:gap-8 md:items-end md:space-x-0 md:overflow-visible md:p-0 md:m-0 
             relative">
 
-            <!-- Card 1: Starter -->
             <div class="pricing-card snap-center flex-shrink-0 w-11/12 md:w-full max-w-sm mx-auto md:mx-0 border border-gray-200 rounded-2xl p-8 text-center hover:shadow-lg transition duration-500">
                 <h3 class="bg-gray-100 inline-block px-4 py-1 rounded-full text-sm font-bold text-gray-600 mb-4">Starter</h3>
                 <div class="text-3xl font-extrabold text-brand-orange mb-6">Rp 250k</div>
                 <ul class="space-y-3 text-sm text-gray-600 mb-8 border-t border-gray-100 pt-6">
-                    <li>4 Sessions / Month</li>
-                    <li>Max 10 Students</li>
+                    <li>4 Sesi / Bulan</li>
+                    <li>Maks 10 Siswa</li>
                     <li class="opacity-0">Placeholder</li>
                 </ul>
-                <button class="w-full border-2 border-brand-orange text-brand-orange font-bold py-2 rounded-lg hover:bg-brand-orange hover:text-white transition transform hover:scale-[1.02]">Select</button>
+                <button class="w-full border-2 border-brand-orange text-brand-orange font-bold py-2 rounded-lg hover:bg-brand-orange hover:text-white transition transform hover:scale-[1.02]">Pilih</button>
             </div>
             
-            <!-- Card 2: Smart Kid (POPULAR) -->
             <div class="pricing-card snap-center flex-shrink-0 w-11/12 md:w-full max-w-sm mx-auto md:mx-0 border-4 border-brand-red bg-white rounded-2xl pt-12 pb-8 px-8 text-center shadow-[0_20px_50px_-10px_rgba(237,51,56,0.3)] transform md:scale-105 relative z-10 duration-500">
                 <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
-                    <span class="bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Popular</span>
+                    <span class="bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Populer</span>
                 </div>
                 <h3 class="text-xl font-bold text-brand-brown mb-2 mt-4">Smart Kid</h3>
                 <div class="text-4xl font-extrabold text-brand-red mb-6">Rp 450k</div>
                 <ul class="space-y-3 text-sm text-gray-600 mb-8 border-t border-gray-100 pt-6">
-                    <li>8 Sessions / Month</li>
-                    <li>Max 5 Students</li>
-                    <li class="font-bold text-brand-red">Free Merchandise</li>
+                    <li>8 Sesi / Bulan</li>
+                    <li>Maks 5 Siswa</li>
+                    <li class="font-bold text-brand-red">Gratis Merchandise</li>
                 </ul>
-                <!-- MENAMBAHKAN ANIMASI HOVER PADA TOMBOL (transform hover:scale-[1.03]) -->
-                <button class="w-full bg-brand-red bg-gradient-to-r from-brand-red to-brand-terra text-white font-bold py-3 rounded-lg hover:from-brand-brown hover:to-brand-brown transition transform hover:scale-[1.03]">Choose Plan</button>
+                <button class="w-full bg-brand-red bg-gradient-to-r from-brand-red to-brand-terra text-white font-bold py-3 rounded-lg hover:from-brand-brown hover:to-brand-brown transition transform hover:scale-[1.03]">Pilih Paket</button>
             </div>
             
-            <!-- Card 3: Private -->
             <div class="pricing-card snap-center flex-shrink-0 w-11/12 md:w-full max-w-sm mx-auto md:mx-0 border border-gray-200 rounded-2xl p-8 text-center hover:shadow-lg transition duration-500">
                 <h3 class="bg-gray-100 inline-block px-4 py-1 rounded-full text-sm font-bold text-gray-600 mb-4">Private</h3>
                 <div class="text-3xl font-extrabold text-brand-terra mb-6">Rp 800k</div>
                 <ul class="space-y-3 text-sm text-gray-600 mb-8 border-t border-gray-100 pt-6">
-                    <li>Flexible Schedule</li>
-                    <li>1 Student (Private)</li>
+                    <li>Jadwal Fleksibel</li>
+                    <li>1 Siswa (Private)</li>
                     <li class="opacity-0">Placeholder</li>
                 </ul>
-                <button class="w-full border-2 border-brand-terra text-brand-terra font-bold py-2 rounded-lg hover:bg-brand-terra hover:text-white transition transform hover:scale-[1.02]">Select</button>
+                <button class="w-full border-2 border-brand-terra text-brand-terra font-bold py-2 rounded-lg hover:bg-brand-terra hover:text-white transition transform hover:scale-[1.02]">Pilih</button>
             </div>
 
         </div>
-        <!-- END: pricing-track -->
-        
-        <!-- Navigation Indicator untuk Mobile -->
         <div id="pricing-dots" class="flex justify-center mt-6 md:hidden space-x-2">
-            <!-- Dots akan diisi dan dikontrol oleh JavaScript -->
-        </div>
+            </div>
         
     </div>
 </section>
