@@ -12,7 +12,7 @@
 
             <div class="pricing-card snap-center flex-shrink-0 w-11/12 md:w-full max-w-sm mx-auto md:mx-0 border border-gray-200 rounded-2xl p-8 text-center hover:shadow-lg transition duration-500">
                 <h3 class="bg-gray-100 inline-block px-4 py-1 rounded-full text-sm font-bold text-gray-600 mb-4">Regular</h3>
-                <div class="text-3xl font-extrabold text-brand-orange mb-6">Rp 599.000,-</div>
+                <div class="text-3xl font-extrabold text-brand-orange mb-6">Rp 599K</div>
                 <ul class="space-y-3 text-sm text-gray-600 mb-8 border-t border-gray-100 pt-6">
                     
                     <li>20x pertemuan</li>
@@ -36,7 +36,7 @@
                     <span class="bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Populer</span>
                 </div>
                 <h3 class="text-xl font-bold text-brand-brown mb-2 mt-4">Private</h3>
-                <div class="text-4xl font-extrabold text-brand-red mb-6">Rp 1.099.999,-</div>
+                <div class="text-4xl font-extrabold text-brand-red mb-6">Rp 1.099K</div>
                 <ul class="space-y-3 text-sm text-gray-600 mb-8 border-t border-gray-100 pt-6">
                     <li>20x pertemuan</li>
                     <li>1 orang</li>
@@ -52,7 +52,7 @@
             
             <div class="pricing-card snap-center flex-shrink-0 w-11/12 md:w-full max-w-sm mx-auto md:mx-0 border border-gray-200 rounded-2xl p-8 text-center hover:shadow-lg transition duration-500">
                 <h3 class="bg-gray-100 inline-block px-4 py-1 rounded-full text-sm font-bold text-gray-600 mb-4">Full House</h3>
-                <div class="text-3xl font-extrabold text-brand-terra mb-6">Rp 2.499.999,-</div>
+                <div class="text-3xl font-extrabold text-brand-terra mb-6">Rp 2.499K</div>
                 <ul class="space-y-3 text-sm text-gray-600 mb-8 border-t border-gray-100 pt-6">
                     <li>20x pertemuan</li>
                     <li>Jadwal Fleksibel</li>
